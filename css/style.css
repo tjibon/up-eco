@@ -1,0 +1,566 @@
+/** common css start*/
+*{
+  margin: 0;
+  padding: 0;
+
+}
+/** Fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@200&display=swap');
+/** Fonts End**/
+
+
+body{
+
+  font-family: 'Nunito', sans-serif;
+}
+
+
+
+/**** common css******/
+.section-title {
+  margin-top: 41px;
+  margin-bottom: 80px;
+  position: relative;
+}
+.section-title h2 {
+  margin: 25px 0;
+  font-size: 50px;
+  font-weight: 700;
+}
+.section-title p {
+  color: #8C8D90;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 400;
+  z-index: 9;
+  font-family: 'Nunito', sans-serif;
+}
+
+.frontend-section .section-title p {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  /* line-height: 24px; */
+  word-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+.section-title:after {
+  position: absolute;
+  content: "";
+  width: 107px;
+  height: 1px;
+  background: #7AC943;
+  bottom: -29px;
+  left: 39%;
+}
+.section-title span {
+  color: #7ac943;
+}
+.box-icon {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  margin: 25px 0;
+  box-shadow: 1px 1px 5px #333;
+}
+.box-icon img {
+  width: 40px;
+  padding: 13px 0;
+}
+
+/***** Common Css End ******/
+/********** Header top area *******/
+.header-left-logo img {
+  width: 55px;
+  padding-right: 14px;
+  border-right: 1px solid #ddd;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.main-logo {
+  width: 281px;
+  /* margin-left: 18px; */
+  margin-top: 4px;
+
+}
+.cart-logo a {
+  color: #0A7CFF;
+  margin: 0 5px;
+  padding: 4px 8px;
+  border: 1px solid #0A7CFF;
+  border-radius: 50%;
+}
+.cart-logo a i {
+  font-size: 14px;
+}
+.cart-logo a.green {
+  background: #72A73A;
+  color: #fff;
+}
+
+/********* main-nav start *************/
+.main-nav{}
+.main-nav ul{}
+
+.main-nav ul li {
+  margin-right: 16px;
+  transition: 3s;
+}
+.main-nav ul li:last-child {
+  margin-left: 0;
+}
+
+.main-nav ul li a{
+  position: relative;
+  transition: .3s;
+}
+
+.main-nav ul li a::before {
+  position: absolute;
+  content: "";
+  background-color: #7CCA46;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  display: block;
+  transition: .2s;
+}
+.main-nav ul li:hover .main-nav ul li a{
+
+  color: #7CCA46;
+}
+.main-nav ul li:hover :before{
+
+  width: 100%;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.main-nav .dropdown-toggle::after {
+  display: none !important;
+ 
+}
+
+
+/********** Header top area  end *******/
+
+/********** banner area start *******/
+
+.banner-area{
+  background-image: url(../img/Active-eCommers-CMS-Website-Landing-Page.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.banner-inner {
+  margin-top: 75px;
+  margin-bottom: 12px;
+}
+.banner-inner h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+}
+
+.banner-inner h2 {
+  font-size: 73px;
+  font-weight: 700;
+  margin: 17px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.banner-inner p {
+  font-size: 21px;
+  word-spacing: 1px;
+  letter-spacing: 7px;
+  margin-bottom: 60px;
+  font-family: 'Nunito', sans-serif;
+}
+.banner-button {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  padding-bottom: 90px;
+  
+}
+.banner-button a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+.banner-button .btn-browse{
+  background-color: #7ECB48;
+  border: none;
+  padding: 14px 38px;
+  border-radius: 24px;
+  transition: all .4s ease-in-out !important;
+  color: white;
+}
+.banner-button a.btn.btn-admin {
+  background: rgb(29,158,253);
+  background: linear-gradient(90deg, rgba(29,158,253,0.7231267507002801) 0%, rgba(29,158,253,0.7231267507002801) 8%, rgba(29,158,253,0.3337710084033614) 72%, rgba(196,229,254,1) 100%, rgba(255,255,255,1) 100%);
+  border: none;
+  padding: 14px 38px;
+  border-radius: 24px;
+  transition: all .4s ease-in-out !important;
+  color: white;
+ 
+}
+.banner-button .btn-browse:hover,a.btn.btn-admin:hover{
+  background:white;
+  color: #333;
+}
+/********** Banner area end *******/
+
+/********** Promo Video Section Start *******/
+.promo-video-section{
+  padding-bottom: 120px;
+}
+.section-title h2 {
+  margin: 14px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 39px;
+}
+.video-bg{
+  position: relative;
+}
+.video-section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-section a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E62E04;
+  width: 3.5em;
+  height: 3.5em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all .3s ease;
+}
+.video-section a ::after{
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  animation: point-bounce 1.5s infinite;
+  margin: 0px;
+  opacity: 1;
+  transform-origin: center;
+}
+
+
+
+
+/********** Promo Video Section End *******/
+
+/***** Service serction ******/
+
+.single-service-box {
+  font-family: 'Nunito', sans-serif;
+  background-color: #EFFBFC;
+}
+
+
+.service-content {
+  padding: 8px;
+}
+.servcie-number h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 7px 0;
+}
+.service-content p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #9EA4A5;
+}
+/***** Service serction  end ******/
+
+
+/* Carousel Styles */
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  background: #333;
+  height: 59px;
+}
+
+/***** Feature  serction  start ******/
+p.feature-p {
+  font-size: 17px;
+}
+.single-feature-item{
+  background-color: #FFFDE7;
+}
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  background: #FF2D20;
+  border-radius: 50%;
+  margin-top: 21px;
+}
+.feature-icon i {
+  color: #fff;
+  font-size: 28px;
+  /* padding: 13px 0; */
+  line-height: 69px;
+  text-align: center;
+}
+.applecolor{
+  background-color: #673ab7;
+}
+.carrot{
+  background-color: #EB4719;
+}
+.light-orange{
+  background-color: #F79F1F;
+}
+.fun-green{
+  background-color: #009432;
+}
+.feature-item-heading h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.feature-item-content p {
+  font-size: 14px;
+  color: #333;
+  padding: 0 26px;
+  padding-bottom: 30px;
+  font-family: 'Nunito', sans-serif;
+}
+.feature-view-btn a {
+  background: #7ECB48;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  margin: 31px 0;
+  padding: 14px 44px;
+  border-radius: 22px;
+  box-shadow: 5px 10px;
+}
+.feature-view-btn a:hover {
+  color: #fff;
+  
+  
+}
+/***** Feature  serction  end ******/
+
+.product-posting-area{
+  background-color:#F9EFEC;
+}
+.single-post-box {
+  background-color: #fff;
+  padding: 25px 0;
+  border-radius: 13px;
+  margin-bottom: 30px;
+}
+.post-heading {
+  padding: 10px 0;
+}
+.post-heading h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+/**** payment info area start ****/
+.payment-info-text h3,.business-info-text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color:  #7ac943;
+  font-family: 'Montserrat', sans-serif;
+}
+.payment-img, .buniness-img {
+  margin-right: 59px;
+}
+
+.payment-info-text p, .business-info-text p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 26px;
+  color: #757575;
+}
+
+
+/***** Selling-info start *****/
+.selling-info-area {
+  background: #F7F9FB;
+}
+.selling-info-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color:  #7ac943;
+}
+.selling-info-text p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 22px;
+  text-align: left;
+  color: #757575;
+}
+.selling-img {
+  margin-left: 41px;
+}
+
+
+/*** Pricing area start ****/
+
+.pricing-table-section {
+  background: #FDFDFD;
+  margin-top: 78px;
+}
+.single-pricing-box {
+  background-color: mintcream;
+  text-align: center;
+  padding: 34px;
+  border: 1px solid #7ECB48;
+}
+.single-pricing-box h4 {
+  font-size: 20px;
+  margin: 18px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+p.pricing-amout {
+  font-size: 45px;
+ font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+}
+.pricing-list ul {
+  list-style: none;
+}
+.pricing-list ul li {
+  padding: 17px 0;
+}
+.pricing-list ul li {
+  padding: 17px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
+}
+.pricing-list ul li i {
+  font-size: 12px;
+  margin-right: 11px;
+  display: inline-block;
+}
+.pricing-list ul li i.fas.fa-times {
+  color: red;
+}
+.pricing-license {
+  border: 1px solid #7ECB48;
+  padding: 6px 37px;
+  display: inline-block;
+  border-radius: 19px;
+}
+
+
+
+/******* Footer area *****/
+.footer {
+  background: black;
+  color: #fff;
+  padding: 39px 0;
+}
+.footer-logo {
+  padding: 16px;
+  margin-right: 15px;
+  margin-top: 50px;
+}
+.footer-widgets ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-widgets ul li {
+  margin: 10px 0;
+  /* text-decoration: none; */
+}
+.footer-widgets ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+
+/***** Copyright area ********/
+.copyright-area {
+  padding: 11px 0;
+  margin-top: 73px;
+  border-top: 1px solid #fff;
+}
+.copyright-area p {
+  display: inline-block;
+  font-size: 14px;
+}
+.social-logo-area {
+  text-align: right;
+}
+.social-logo-area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social-logo-area ul li {
+  display: inline-block;
+  
+}
+.social-logo-area ul li a {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+}
+.social-logo-area ul li a i {
+  border-radius: 3px;
+  padding: 7px;
+  
+}
+.social-logo-area ul li a i.fab.fa-facebook-f {
+  background: #3B5998;
+
+}
+.social-logo-area ul li a i.fab.fa-twitter {
+  background: #1DA1F2;
+ 
+}
+.social-logo-area ul li a i.fab.fa-youtube {
+  background: #FF0000;
+  
+}
+/***** Copyright area end ********/

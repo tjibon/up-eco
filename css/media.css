@@ -1,0 +1,155 @@
+
+/* 1280-1024   - desktop (default grid) */
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+    h2.top-area-title {
+
+        font-size: 45px !important;
+      
+    }
+
+ }
+
+/*1024-768    - tablet landscape */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    h2.top-area-title {
+        
+        font-size: 35px !important;
+       
+    }
+
+ }
+/*768-480- tablet */ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+    /******* commom css ******/
+        .section-title h2 {
+             margin: 25px 0;
+             font-size: 32px;
+             font-weight: 700;
+        }
+
+    /***** promo-video-section ****/
+
+    .promo-video-section {
+        padding-bottom: 50px;
+    }
+    /******* payment section *******/
+    .payment-img, .buniness-img {
+        margin-right: 59px;
+        margin-bottom: 16px;
+    }
+
+     /********* document page******/
+    .top-search {
+        left: 19% !important;
+        width: 63% !important;
+      
+    }
+    h2.top-area-title {
+        left: 20% !important;
+        font-size: 28px !important;
+    }
+    
+
+
+
+ }
+
+/*480-less    - phone landscape & smaller*/
+@media all and (max-width: 480px) {
+
+    /***** common css *****/
+    .section-title h2 {
+        font-size: 35px;
+      
+    }
+    .section-title:after {
+        bottom: -12px;
+        left: 33%;
+        /* margin-left: 42px; */
+    }
+
+    /***** bannner section ******/
+    .main-logo {
+        width: 191px !important;
+        
+    }
+    .banner-inner h2 {
+        font-size: 32px;   
+    }
+    .banner-inner p {
+        font-size: 14px;
+       
+    }
+    .banner-button a {
+        margin-bottom: 10px;
+    }
+
+    /***** Vido promo section******/
+    .video-bg {
+        margin-top: -42px;
+    }
+    /****** service section *******/
+
+    .service-section {
+        margin-top: -86px;
+    }
+    .single-service-box {
+        margin-bottom: 13px;
+    }
+    /***** frontend section *****/
+    .frontend-section {
+        margin: 0;
+        padding: 0;
+    }
+    .front-slide {
+        margin-top: -39px;
+    }
+    /****** Feature section ******/
+
+    .single-feature-item {
+        margin-top: -32px;
+        margin-bottom: 49px;
+    }
+    .feature-view-btn a {
+        margin-bottom: 22px;
+        margin-top: 0px;
+    }
+    /***********/
+    .pricing-table-section {
+    
+        margin-top: 26px;
+    }
+    /***** copyright area ******/
+    .social-logo-area {
+        text-align: center;
+    }
+    .copyright-area p {
+    
+        font-size: 11px;
+    }
+
+    /****** payment section ******/
+    /********* document page******/
+    .top-search {
+    
+        left: 19% !important;
+        width: 63% !important;
+      
+    }
+    h2.top-area-title {
+        position: absolute;
+        top: 43%;
+        left: 20%;
+        transform: translate(-50px, -50px);
+        font-size: 18px !important;
+        font-weight: 700;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center !important;
+    }
+    
+
+ }
